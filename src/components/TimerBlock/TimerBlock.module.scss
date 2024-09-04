@@ -1,0 +1,63 @@
+@import '../../assets/scss/main.scss';
+
+.block {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	row-gap: 40px;
+	padding: 70px 20px;
+
+	background: linear-gradient(
+			180deg,
+			rgba(0, 0, 0, 0.7) 100%,
+			rgba(0, 0, 0, 0.7) 100%
+		),
+		url('../../assets/img/timer.jpg');
+	object-fit: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	&Title {
+		font-family: var(--second-family);
+		font-weight: 400;
+		font-size: 44px;
+		text-align: center;
+		color: var(--bg-color);
+	}
+
+	&Timer {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		width: 320px;
+
+		&__item {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			align-items: center;
+			width: 74px;
+			height: 70px;
+
+			&Value {
+				font-family: var(--font-family);
+				font-weight: 200;
+				font-size: 40px;
+				line-height: 74%;
+				text-align: center;
+				color: var(--bg-color);
+			}
+
+			&Name {
+				font-family: var(--font-family);
+				font-weight: 300;
+				font-size: 20px;
+				line-height: 100%;
+				text-align: center;
+				color: var(--bg-color);
+			}
+		}
+	}
+}

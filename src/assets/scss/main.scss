@@ -1,0 +1,14 @@
+@import './reset';
+@import './fonts';
+
+html {
+	--bg-color: #f5f4f2;
+	--text-color-dark: #2c2c2c;
+	--text-color-light: #f5f4f2;
+
+	--font-family: 'TTTsarsB', sans-serif;
+	--second-family: 'Journalism', sans-serif;
+	--font5: 'Antarctic', sans-serif;
+
+	font-family: var(--font-family);
+}
